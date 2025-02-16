@@ -7,43 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CECD370F2D62197C00050FB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECD37022D62197C00050FB6 /* LaunchScreen.storyboard */; };
 		CECD37102D62197C00050FB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CECD370A2D62197C00050FB6 /* Assets.xcassets */; };
-		CECD37122D62197C00050FB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37002D62197C00050FB6 /* AppDelegate.swift */; };
 		CECD37132D62197C00050FB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37062D62197C00050FB6 /* ViewController.swift */; };
-		CECD37162D62198500050FB6 /* Autodoc_NewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37142D62198500050FB6 /* Autodoc_NewsTests.swift */; };
+		CECD371C2D621AE200050FB6 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD371A2D621AE200050FB6 /* Injector.swift */; };
+		CECD37202D621D7000050FB6 /* InjectorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD371F2D621D7000050FB6 /* InjectorProtocol.swift */; };
+		CECD372A2D621DEF00050FB6 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37282D621DEF00050FB6 /* Builder.swift */; };
+		CECD372E2D621EC400050FB6 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD372D2D621EC400050FB6 /* DataStorage.swift */; };
+		CECD37302D621EF100050FB6 /* DataStorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD372F2D621EF100050FB6 /* DataStorageProtocol.swift */; };
+		CECD37392D62216C00050FB6 /* FileManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37372D62216C00050FB6 /* FileManagerProtocol.swift */; };
+		CECD37402D62234700050FB6 /* FileManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD373E2D62234700050FB6 /* FileManagerExtension.swift */; };
+		CECD37462D62244300050FB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECD37442D62244300050FB6 /* LaunchScreen.storyboard */; };
+		CECD37492D62244300050FB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37472D62244300050FB6 /* AppDelegate.swift */; };
+		CECD37502D62266700050FB6 /* LoggerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD374E2D62266700050FB6 /* LoggerExtension.swift */; };
+		CECD37522D62267800050FB6 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37512D62267800050FB6 /* NSObjectExtension.swift */; };
+		CECD37542D62271000050FB6 /* LoggerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37532D62271000050FB6 /* LoggerProtocol.swift */; };
+		CECD375A2D6227CA00050FB6 /* LoggerProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37582D6227CA00050FB6 /* LoggerProtocolExtension.swift */; };
+		CECD375C2D622A2B00050FB6 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD375B2D622A2B00050FB6 /* DateExtension.swift */; };
+		CECD37622D622BF500050FB6 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37602D622BF500050FB6 /* AppCoordinator.swift */; };
+		CECD37642D622C0C00050FB6 /* AppCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37632D622C0C00050FB6 /* AppCoordinatorProtocol.swift */; };
+		CECD37682D622C4E00050FB6 /* AppBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37672D622C4E00050FB6 /* AppBuilder.swift */; };
+		CECD376A2D622C5400050FB6 /* AppBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37692D622C5400050FB6 /* AppBuilderProtocol.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		CECD36C52D60DFCC00050FB6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CECD36A32D60DFCA00050FB6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CECD36AA2D60DFCA00050FB6;
-			remoteInfo = "Autodoc News";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CECD36AB2D60DFCA00050FB6 /* Autodoc News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Autodoc News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CECD36C42D60DFCC00050FB6 /* Unit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CECD37002D62197C00050FB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CECD37012D62197C00050FB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CECD37062D62197C00050FB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CECD370A2D62197C00050FB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CECD370D2D62197C00050FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CECD37142D62198500050FB6 /* Autodoc_NewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Autodoc_NewsTests.swift; sourceTree = "<group>"; };
+		CECD371A2D621AE200050FB6 /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
+		CECD371F2D621D7000050FB6 /* InjectorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectorProtocol.swift; sourceTree = "<group>"; };
+		CECD37282D621DEF00050FB6 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		CECD372D2D621EC400050FB6 /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
+		CECD372F2D621EF100050FB6 /* DataStorageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorageProtocol.swift; sourceTree = "<group>"; };
+		CECD37372D62216C00050FB6 /* FileManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerProtocol.swift; sourceTree = "<group>"; };
+		CECD373E2D62234700050FB6 /* FileManagerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtension.swift; sourceTree = "<group>"; };
+		CECD37432D62244300050FB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CECD37472D62244300050FB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CECD374E2D62266700050FB6 /* LoggerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerExtension.swift; sourceTree = "<group>"; };
+		CECD37512D62267800050FB6 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		CECD37532D62271000050FB6 /* LoggerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerProtocol.swift; sourceTree = "<group>"; };
+		CECD37582D6227CA00050FB6 /* LoggerProtocolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerProtocolExtension.swift; sourceTree = "<group>"; };
+		CECD375B2D622A2B00050FB6 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		CECD37602D622BF500050FB6 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		CECD37632D622C0C00050FB6 /* AppCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		CECD37672D622C4E00050FB6 /* AppBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBuilder.swift; sourceTree = "<group>"; };
+		CECD37692D622C5400050FB6 /* AppBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBuilderProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CECD36A82D60DFCA00050FB6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CECD36C12D60DFCC00050FB6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -57,7 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				CECD370E2D62197C00050FB6 /* Autodoc News */,
-				CECD37152D62198500050FB6 /* Unit Tests */,
 				CECD36AC2D60DFCA00050FB6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				CECD36AB2D60DFCA00050FB6 /* Autodoc News.app */,
-				CECD36C42D60DFCC00050FB6 /* Unit Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,8 +84,10 @@
 		CECD37032D62197C00050FB6 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				CECD37002D62197C00050FB6 /* AppDelegate.swift */,
-				CECD37022D62197C00050FB6 /* LaunchScreen.storyboard */,
+				CECD37452D62244300050FB6 /* Apperance */,
+				CECD37482D62244300050FB6 /* Delegate */,
+				CECD37662D622C4600050FB6 /* Builder */,
+				CECD37612D622BF500050FB6 /* Coordinator */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -109,15 +121,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		CECD37092D62197C00050FB6 /* Presentation */ = {
+		CECD37092D62197C00050FB6 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
 				CECD37042D62197C00050FB6 /* Coordinator */,
-				CECD37052D62197C00050FB6 /* View */,
-				CECD37072D62197C00050FB6 /* ViewController */,
 				CECD37082D62197C00050FB6 /* ViewModel */,
+				CECD37072D62197C00050FB6 /* ViewController */,
+				CECD37052D62197C00050FB6 /* View */,
 			);
-			path = Presentation;
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		CECD370B2D62197C00050FB6 /* Resources */ = {
@@ -131,6 +143,10 @@
 		CECD370C2D62197C00050FB6 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				CECD37292D621DEF00050FB6 /* Builder */,
+				CECD371B2D621AE200050FB6 /* Injector */,
+				CECD372C2D621EB000050FB6 /* DataStorage */,
+				CECD37382D62216C00050FB6 /* Protocols */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -138,21 +154,135 @@
 		CECD370E2D62197C00050FB6 /* Autodoc News */ = {
 			isa = PBXGroup;
 			children = (
-				CECD37032D62197C00050FB6 /* Application */,
-				CECD37092D62197C00050FB6 /* Presentation */,
-				CECD370B2D62197C00050FB6 /* Resources */,
-				CECD370C2D62197C00050FB6 /* Services */,
 				CECD370D2D62197C00050FB6 /* Info.plist */,
+				CECD37032D62197C00050FB6 /* Application */,
+				CECD376C2D62383200050FB6 /* Modules */,
+				CECD370C2D62197C00050FB6 /* Services */,
+				CECD371E2D621D1800050FB6 /* Extensions */,
+				CECD370B2D62197C00050FB6 /* Resources */,
 			);
 			path = "Autodoc News";
 			sourceTree = "<group>";
 		};
-		CECD37152D62198500050FB6 /* Unit Tests */ = {
+		CECD371B2D621AE200050FB6 /* Injector */ = {
 			isa = PBXGroup;
 			children = (
-				CECD37142D62198500050FB6 /* Autodoc_NewsTests.swift */,
+				CECD371A2D621AE200050FB6 /* Injector.swift */,
+				CECD371F2D621D7000050FB6 /* InjectorProtocol.swift */,
 			);
-			path = "Unit Tests";
+			path = Injector;
+			sourceTree = "<group>";
+		};
+		CECD371E2D621D1800050FB6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CECD373F2D62234700050FB6 /* Classes */,
+				CECD374F2D62266700050FB6 /* Structures */,
+				CECD37592D6227CA00050FB6 /* Protocols */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CECD37292D621DEF00050FB6 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				CECD37282D621DEF00050FB6 /* Builder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		CECD372C2D621EB000050FB6 /* DataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				CECD372D2D621EC400050FB6 /* DataStorage.swift */,
+				CECD372F2D621EF100050FB6 /* DataStorageProtocol.swift */,
+			);
+			path = DataStorage;
+			sourceTree = "<group>";
+		};
+		CECD37382D62216C00050FB6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CECD37372D62216C00050FB6 /* FileManagerProtocol.swift */,
+				CECD37532D62271000050FB6 /* LoggerProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CECD373F2D62234700050FB6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CECD373E2D62234700050FB6 /* FileManagerExtension.swift */,
+				CECD37512D62267800050FB6 /* NSObjectExtension.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CECD37452D62244300050FB6 /* Apperance */ = {
+			isa = PBXGroup;
+			children = (
+				CECD37442D62244300050FB6 /* LaunchScreen.storyboard */,
+			);
+			path = Apperance;
+			sourceTree = "<group>";
+		};
+		CECD37482D62244300050FB6 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				CECD37472D62244300050FB6 /* AppDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		CECD374F2D62266700050FB6 /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+				CECD375B2D622A2B00050FB6 /* DateExtension.swift */,
+				CECD374E2D62266700050FB6 /* LoggerExtension.swift */,
+			);
+			path = Structures;
+			sourceTree = "<group>";
+		};
+		CECD37592D6227CA00050FB6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CECD37582D6227CA00050FB6 /* LoggerProtocolExtension.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CECD37612D622BF500050FB6 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				CECD37602D622BF500050FB6 /* AppCoordinator.swift */,
+				CECD37632D622C0C00050FB6 /* AppCoordinatorProtocol.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		CECD37662D622C4600050FB6 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				CECD37672D622C4E00050FB6 /* AppBuilder.swift */,
+				CECD37692D622C5400050FB6 /* AppBuilderProtocol.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		CECD376C2D62383200050FB6 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CECD376E2D62387C00050FB6 /* Splash */,
+				CECD37092D62197C00050FB6 /* Navigation */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CECD376E2D62387C00050FB6 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,26 +307,6 @@
 			productReference = CECD36AB2D60DFCA00050FB6 /* Autodoc News.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CECD36C32D60DFCC00050FB6 /* Unit Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CECD36DC2D60DFCC00050FB6 /* Build configuration list for PBXNativeTarget "Unit Tests" */;
-			buildPhases = (
-				CECD36C02D60DFCC00050FB6 /* Sources */,
-				CECD36C12D60DFCC00050FB6 /* Frameworks */,
-				CECD36C22D60DFCC00050FB6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CECD36C62D60DFCC00050FB6 /* PBXTargetDependency */,
-			);
-			name = "Unit Tests";
-			packageProductDependencies = (
-			);
-			productName = "Autodoc NewsTests";
-			productReference = CECD36C42D60DFCC00050FB6 /* Unit Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -209,10 +319,6 @@
 				TargetAttributes = {
 					CECD36AA2D60DFCA00050FB6 = {
 						CreatedOnToolsVersion = 16.2;
-					};
-					CECD36C32D60DFCC00050FB6 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = CECD36AA2D60DFCA00050FB6;
 					};
 				};
 			};
@@ -231,7 +337,6 @@
 			projectRoot = "";
 			targets = (
 				CECD36AA2D60DFCA00050FB6 /* Autodoc News */,
-				CECD36C32D60DFCC00050FB6 /* Unit Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -241,15 +346,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CECD370F2D62197C00050FB6 /* LaunchScreen.storyboard in Resources */,
 				CECD37102D62197C00050FB6 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CECD36C22D60DFCC00050FB6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				CECD37462D62244300050FB6 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,34 +358,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CECD37122D62197C00050FB6 /* AppDelegate.swift in Sources */,
+				CECD37402D62234700050FB6 /* FileManagerExtension.swift in Sources */,
+				CECD376A2D622C5400050FB6 /* AppBuilderProtocol.swift in Sources */,
+				CECD375C2D622A2B00050FB6 /* DateExtension.swift in Sources */,
+				CECD37502D62266700050FB6 /* LoggerExtension.swift in Sources */,
+				CECD37392D62216C00050FB6 /* FileManagerProtocol.swift in Sources */,
+				CECD37522D62267800050FB6 /* NSObjectExtension.swift in Sources */,
+				CECD37202D621D7000050FB6 /* InjectorProtocol.swift in Sources */,
+				CECD37492D62244300050FB6 /* AppDelegate.swift in Sources */,
+				CECD37682D622C4E00050FB6 /* AppBuilder.swift in Sources */,
+				CECD371C2D621AE200050FB6 /* Injector.swift in Sources */,
+				CECD37302D621EF100050FB6 /* DataStorageProtocol.swift in Sources */,
+				CECD372E2D621EC400050FB6 /* DataStorage.swift in Sources */,
+				CECD37542D62271000050FB6 /* LoggerProtocol.swift in Sources */,
+				CECD375A2D6227CA00050FB6 /* LoggerProtocolExtension.swift in Sources */,
+				CECD37622D622BF500050FB6 /* AppCoordinator.swift in Sources */,
 				CECD37132D62197C00050FB6 /* ViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CECD36C02D60DFCC00050FB6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CECD37162D62198500050FB6 /* Autodoc_NewsTests.swift in Sources */,
+				CECD37642D622C0C00050FB6 /* AppCoordinatorProtocol.swift in Sources */,
+				CECD372A2D621DEF00050FB6 /* Builder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		CECD36C62D60DFCC00050FB6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CECD36AA2D60DFCA00050FB6 /* Autodoc News */;
-			targetProxy = CECD36C52D60DFCC00050FB6 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		CECD37022D62197C00050FB6 /* LaunchScreen.storyboard */ = {
+		CECD37442D62244300050FB6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CECD37012D62197C00050FB6 /* Base */,
+				CECD37432D62244300050FB6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -478,52 +576,6 @@
 			};
 			name = Release;
 		};
-		CECD36DD2D60DFCC00050FB6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M2AV5R5DQ2;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.autodoc.unit-tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Autodoc News.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Autodoc News";
-			};
-			name = Debug;
-		};
-		CECD36DE2D60DFCC00050FB6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M2AV5R5DQ2;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.autodoc.unit-tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Autodoc News.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Autodoc News";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -541,15 +593,6 @@
 			buildConfigurations = (
 				CECD36D82D60DFCC00050FB6 /* Debug */,
 				CECD36D92D60DFCC00050FB6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CECD36DC2D60DFCC00050FB6 /* Build configuration list for PBXNativeTarget "Unit Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CECD36DD2D60DFCC00050FB6 /* Debug */,
-				CECD36DE2D60DFCC00050FB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
