@@ -12,6 +12,7 @@ class NavigationViewController: UIViewController {
         self.customView = customView
         self.subscriptions = Set<AnyCancellable>()
         super.init(nibName: nil, bundle: nil)
+        setupObservers()
     }
     
     required init?(coder: NSCoder) {
@@ -19,7 +20,7 @@ class NavigationViewController: UIViewController {
     }
     
     private func setupObservers() {
-        viewModel.externalEvent.sink { [weak self] in
+        viewModel.externalEvent.receive(on: DispatchQueue.main).sink { [weak self] in
             self?.customView.internalEvent.send($0)
         }.store(in: &subscriptions)
         

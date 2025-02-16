@@ -24,6 +24,13 @@ private extension NavigationBuilder {
         return decoder
     }
     
+    var layout: UICollectionViewFlowLayout {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+        layout.itemSize = UICollectionViewFlowLayout.automaticSize
+        return layout
+    }
+    
 }
 
 // MARK: Protocol
@@ -56,7 +63,9 @@ extension NavigationBuilder {
         
         let networkManager = NavigationNetworkManager(session: session, decoder: decoder)
         let viewModel = NavigationViewModel(coordinator: coordinator, networkManager: networkManager)
-        let view = NavigationView()
+        let dataSource = NavigationViewDataSource()
+        let delegate = NavigationViewDelegate()
+        let view = NavigationView(dataSource: dataSource, delegate: delegate, layout: layout)
         let viewController = NavigationViewController(viewModel: viewModel, customView: view)
         return viewController
     }

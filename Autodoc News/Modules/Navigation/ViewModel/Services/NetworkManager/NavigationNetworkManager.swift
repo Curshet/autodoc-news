@@ -44,6 +44,8 @@ private extension NavigationNetworkManager {
             return
         }
         
+        logger.print("Starting data request for URL: \(string)")
+        
         session.dataTask(with: url) { [weak self] data, response, error in
             guard let error else {
                 self?.dataHandler(data)
@@ -65,9 +67,10 @@ private extension NavigationNetworkManager {
         
         do {
             let value = try decoder.decode(NewsData.self, from: data)
+            logger.print("Server data decoding successfully ended")
             responsePublisher.send(.success(value))
         } catch {
-            logger.print("Data decoding ended with error: \(error)")
+            logger.print("Server data decoding ended with error: \(error)")
             responsePublisher.send(.failure(error))
         }
     }

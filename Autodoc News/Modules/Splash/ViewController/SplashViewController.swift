@@ -20,7 +20,7 @@ class SplashViewController: UIViewController {
     }
     
     private func setupObservers() {
-        viewModel.externalEvent.sink { [weak self] in
+        viewModel.externalEvent.receive(on: DispatchQueue.main).sink { [weak self] in
             self?.customView.internalEvent.send($0)
         }.store(in: &subscriptions)
         
