@@ -8,8 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		CE38068C2D6272CF00E0CBFE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE38068A2D6272CF00E0CBFE /* InfoPlist.strings */; };
+		CE3806932D6274DC00E0CBFE /* NavigationNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3806922D6274DC00E0CBFE /* NavigationNetworkManager.swift */; };
+		CE3806952D6274EE00E0CBFE /* NavigationNetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3806942D6274EE00E0CBFE /* NavigationNetworkManagerProtocol.swift */; };
+		CE3806972D627B0E00E0CBFE /* JSONDecoderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3806962D627B0E00E0CBFE /* JSONDecoderProtocol.swift */; };
+		CE3806992D627B4400E0CBFE /* JSONDecoderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3806982D627B4400E0CBFE /* JSONDecoderExtension.swift */; };
+		CE38069F2D627C7B00E0CBFE /* NavigationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE38069D2D627C7B00E0CBFE /* NavigationModels.swift */; };
 		CECD37102D62197C00050FB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CECD370A2D62197C00050FB6 /* Assets.xcassets */; };
-		CECD37132D62197C00050FB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37062D62197C00050FB6 /* ViewController.swift */; };
+		CECD37132D62197C00050FB6 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37062D62197C00050FB6 /* NavigationViewController.swift */; };
 		CECD371C2D621AE200050FB6 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD371A2D621AE200050FB6 /* Injector.swift */; };
 		CECD37202D621D7000050FB6 /* InjectorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD371F2D621D7000050FB6 /* InjectorProtocol.swift */; };
 		CECD372A2D621DEF00050FB6 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37282D621DEF00050FB6 /* Builder.swift */; };
@@ -56,8 +61,13 @@
 /* Begin PBXFileReference section */
 		CE38068B2D6272CF00E0CBFE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE38068D2D6272E600E0CBFE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE3806922D6274DC00E0CBFE /* NavigationNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationNetworkManager.swift; sourceTree = "<group>"; };
+		CE3806942D6274EE00E0CBFE /* NavigationNetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationNetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		CE3806962D627B0E00E0CBFE /* JSONDecoderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderProtocol.swift; sourceTree = "<group>"; };
+		CE3806982D627B4400E0CBFE /* JSONDecoderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderExtension.swift; sourceTree = "<group>"; };
+		CE38069D2D627C7B00E0CBFE /* NavigationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModels.swift; sourceTree = "<group>"; };
 		CECD36AB2D60DFCA00050FB6 /* Autodoc News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Autodoc News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CECD37062D62197C00050FB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CECD37062D62197C00050FB6 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		CECD370A2D62197C00050FB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CECD370D2D62197C00050FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CECD371A2D621AE200050FB6 /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
@@ -114,6 +124,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE3806902D6274C700E0CBFE /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				CE3806922D6274DC00E0CBFE /* NavigationNetworkManager.swift */,
+				CE3806942D6274EE00E0CBFE /* NavigationNetworkManagerProtocol.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		CE3806912D6274C700E0CBFE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE3806902D6274C700E0CBFE /* NetworkManager */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CE38069E2D627C7B00E0CBFE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE38069D2D627C7B00E0CBFE /* NavigationModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		CECD36A22D60DFCA00050FB6 = {
 			isa = PBXGroup;
 			children = (
@@ -163,7 +198,7 @@
 		CECD37072D62197C00050FB6 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				CECD37062D62197C00050FB6 /* ViewController.swift */,
+				CECD37062D62197C00050FB6 /* NavigationViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -173,6 +208,8 @@
 			children = (
 				CECD37972D624FDA00050FB6 /* NavigationViewModel.swift */,
 				CECD37992D624FEC00050FB6 /* NavigationViewModelProtocol.swift */,
+				CE38069E2D627C7B00E0CBFE /* Models */,
+				CE3806912D6274C700E0CBFE /* Services */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -264,6 +301,7 @@
 				CECD37372D62216C00050FB6 /* FileManagerProtocol.swift */,
 				CECD37532D62271000050FB6 /* LoggerProtocol.swift */,
 				CECD37B62D6268E200050FB6 /* URLSessionProtocol.swift */,
+				CE3806962D627B0E00E0CBFE /* JSONDecoderProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -274,6 +312,7 @@
 				CECD373E2D62234700050FB6 /* FileManagerExtension.swift */,
 				CECD37512D62267800050FB6 /* NSObjectExtension.swift */,
 				CECD37B82D62690000050FB6 /* URLSessionExtension.swift */,
+				CE3806982D627B4400E0CBFE /* JSONDecoderExtension.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -502,6 +541,7 @@
 			files = (
 				CECD37882D624D2900050FB6 /* SplashViewModelProtocol.swift in Sources */,
 				CECD37402D62234700050FB6 /* FileManagerExtension.swift in Sources */,
+				CE3806952D6274EE00E0CBFE /* NavigationNetworkManagerProtocol.swift in Sources */,
 				CECD376A2D622C5400050FB6 /* AppBuilderProtocol.swift in Sources */,
 				CECD375C2D622A2B00050FB6 /* DateExtension.swift in Sources */,
 				CECD37502D62266700050FB6 /* LoggerExtension.swift in Sources */,
@@ -512,10 +552,12 @@
 				CECD37922D624D6000050FB6 /* SplashViewProtocol.swift in Sources */,
 				CECD377C2D62445A00050FB6 /* SplashBuilder.swift in Sources */,
 				CECD37942D624F9900050FB6 /* NavigationCoordinator.swift in Sources */,
+				CE3806972D627B0E00E0CBFE /* JSONDecoderProtocol.swift in Sources */,
 				CECD37742D62426D00050FB6 /* SplashCoordinator.swift in Sources */,
 				CECD37B72D6268E200050FB6 /* URLSessionProtocol.swift in Sources */,
 				CECD37522D62267800050FB6 /* NSObjectExtension.swift in Sources */,
 				CECD379E2D62502800050FB6 /* NavigationViewProtocol.swift in Sources */,
+				CE3806992D627B4400E0CBFE /* JSONDecoderExtension.swift in Sources */,
 				CECD377E2D62447300050FB6 /* SplashBuilderProtocol.swift in Sources */,
 				CECD37762D62427C00050FB6 /* SplashCoordinatorProtocol.swift in Sources */,
 				CECD37202D621D7000050FB6 /* InjectorProtocol.swift in Sources */,
@@ -533,10 +575,12 @@
 				CECD37542D62271000050FB6 /* LoggerProtocol.swift in Sources */,
 				CECD375A2D6227CA00050FB6 /* LoggerProtocolExtension.swift in Sources */,
 				CECD379A2D624FEC00050FB6 /* NavigationViewModelProtocol.swift in Sources */,
+				CE3806932D6274DC00E0CBFE /* NavigationNetworkManager.swift in Sources */,
 				CECD379C2D62502000050FB6 /* NavigationView.swift in Sources */,
 				CECD37902D624D5400050FB6 /* SplashView.swift in Sources */,
+				CE38069F2D627C7B00E0CBFE /* NavigationModels.swift in Sources */,
 				CECD37622D622BF500050FB6 /* AppCoordinator.swift in Sources */,
-				CECD37132D62197C00050FB6 /* ViewController.swift in Sources */,
+				CECD37132D62197C00050FB6 /* NavigationViewController.swift in Sources */,
 				CECD37642D622C0C00050FB6 /* AppCoordinatorProtocol.swift in Sources */,
 				CECD372A2D621DEF00050FB6 /* Builder.swift in Sources */,
 				CECD37A82D62510F00050FB6 /* NavigationBuilderProtocol.swift in Sources */,

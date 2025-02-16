@@ -37,14 +37,14 @@ final class Injector: InjectorProtocol {
     
 }
 
+// MARK: - InjectorContainer
+fileprivate class InjectorContainer {
+    var value = [String : Any]()
+}
+
 // MARK: - InjectorKey
 enum InjectorKey: Hashable {
     case application
     case splash
     case navigation
-}
-
-// MARK: - InjectorContainer
-final class InjectorContainer {
-    var value = [String : Any]()
 }

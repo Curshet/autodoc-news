@@ -1,3 +1,3 @@
 import Foundation
 
-protocol URLSessionProtocol {}
+protocol URLSessionProtocol: URLSession {}

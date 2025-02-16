@@ -3,7 +3,7 @@ import Combine
 
 class SplashViewModel: SplashViewModelProtocol {
     
-    let intenalEvent: PassthroughSubject<SplashViewModelInternalEvent, Never>
+    let intenalEvent: PassthroughSubject<SplashViewModelInternal, Never>
     let externalEvent: AnyPublisher<SplashViewData, Never>
     
     private weak var coordinator: SplashCoordinatorExitProtocol?
@@ -12,7 +12,7 @@ class SplashViewModel: SplashViewModelProtocol {
     
     init(coordinator: SplashCoordinatorExitProtocol) {
         self.coordinator = coordinator
-        self.intenalEvent = PassthroughSubject<SplashViewModelInternalEvent, Never>()
+        self.intenalEvent = PassthroughSubject<SplashViewModelInternal, Never>()
         self.externalPublisher = PassthroughSubject<SplashViewData, Never>()
         self.externalEvent = AnyPublisher(externalPublisher)
         self.subscriptions = Set<AnyCancellable>()
@@ -30,7 +30,7 @@ private extension SplashViewModel {
         }.store(in: &subscriptions)
     }
     
-    func internalEventHandler(_ event: SplashViewModelInternalEvent) {
+    func internalEventHandler(_ event: SplashViewModelInternal) {
         switch event {
             case .data:
                 let layout = SplashViewLayout()
@@ -44,8 +44,8 @@ private extension SplashViewModel {
     
 }
 
-// MARK: - SplashViewModelInternalEvent
-enum SplashViewModelInternalEvent {
+// MARK: - SplashViewModelInternal
+enum SplashViewModelInternal {
     case data
     case exit
 }

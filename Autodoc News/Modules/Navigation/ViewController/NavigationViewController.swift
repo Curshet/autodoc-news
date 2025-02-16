@@ -1,18 +1,17 @@
 import UIKit
 import Combine
 
-class SplashViewController: UIViewController {
+class NavigationViewController: UIViewController {
     
-    private let viewModel: SplashViewModelProtocol
-    private let customView: SplashViewProtocol
+    private let viewModel: NavigationViewModelProtocol
+    private let customView: NavigationViewProtocol
     private var subscriptions: Set<AnyCancellable>
     
-    init(viewModel: SplashViewModelProtocol, view: SplashViewProtocol) {
+    init(viewModel: NavigationViewModelProtocol, customView: NavigationViewProtocol) {
         self.viewModel = viewModel
-        self.customView = view
+        self.customView = customView
         self.subscriptions = Set<AnyCancellable>()
         super.init(nibName: nil, bundle: nil)
-        setupObservers()
     }
     
     required init?(coder: NSCoder) {
@@ -24,8 +23,8 @@ class SplashViewController: UIViewController {
             self?.customView.internalEvent.send($0)
         }.store(in: &subscriptions)
         
-        customView.externalEvent.sink { [weak self] in
-            self?.viewModel.intenalEvent.send(.exit)
+        customView.externalEvent.sink {
+            return
         }.store(in: &subscriptions)
     }
     
@@ -33,9 +32,14 @@ class SplashViewController: UIViewController {
         view = customView
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        viewModel.intenalEvent.send(.data)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        viewModel.internalEvent.send(.data)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        viewModel.internalEvent.send(.navigationBar)
+    }
+
 }
