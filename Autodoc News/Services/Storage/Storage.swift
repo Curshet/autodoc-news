@@ -1,6 +1,6 @@
 import Foundation
 
-class DataStorage: NSObject, DataStorageProtocol {
+class Storage: NSObject, StorageProtocol {
     
     private let fileManager: FileManagerProtocol
     private let queue: DispatchQueue
@@ -14,7 +14,7 @@ class DataStorage: NSObject, DataStorageProtocol {
 }
 
 // MARK: Public
-extension DataStorage {
+extension Storage {
     
     func getFile(from: DataStorageDirectory, name: String) -> Data? {
         guard !name.isEmpty else {

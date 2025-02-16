@@ -1,4 +1,5 @@
 import UIKit
+import OSLog
 
 final class AppBuilder: Builder, AppBuilderProtocol {
     
@@ -14,13 +15,13 @@ private extension AppBuilder {
     
     func register() {
         injector.register(FileManager.default, in: .application)
+        injector.register(URLSession.shared, in: .application)
+        injector.register(Logger.shared, in: .application)
         injector.register(keyWindow, in: .application)
     }
     
     var keyWindow: UIWindow {
-        let viewController = ViewController()
         let window = UIWindow()
-        window.rootViewController = viewController
         window.makeKeyAndVisible()
         return window
     }
@@ -30,8 +31,18 @@ private extension AppBuilder {
 // MARK: Protocol
 extension AppBuilder {
     
-    var coordinator: AppCoordinatorProtocol? {
+    var appCoordinator: AppCoordinatorProtocol? {
         AppCoordinator(builder: self)
+    }
+    
+    var splashCoordinator: SplashCoordinatorProtocol? {
+        let builder = SplashBuilder(injector: injector)
+        return builder.coordinator
+    }
+    
+    var navigationCoordinator: NavigationCoordinatorProtocol? {
+        let builder = NavigationBuilder(injector: injector)
+        return builder.coordinator
     }
     
 }

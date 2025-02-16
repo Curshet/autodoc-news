@@ -26,8 +26,13 @@ final class Injector: InjectorProtocol {
     
     func resolve<T>(_ type: T.Type, from container: InjectorKey) -> T? {
         queue.sync {
-            containers[container] as? T
+            containers[container]?.value["\(type)"] as? T
         }
+    }
+    
+    func remove(container: InjectorKey) {
+        guard container != .application else { return }
+        containers[container] = nil
     }
     
 }
@@ -35,7 +40,8 @@ final class Injector: InjectorProtocol {
 // MARK: - InjectorKey
 enum InjectorKey: Hashable {
     case application
-    case presentation
+    case splash
+    case navigation
 }
 
 // MARK: - InjectorContainer

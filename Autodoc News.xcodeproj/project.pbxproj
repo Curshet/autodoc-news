@@ -12,8 +12,8 @@
 		CECD371C2D621AE200050FB6 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD371A2D621AE200050FB6 /* Injector.swift */; };
 		CECD37202D621D7000050FB6 /* InjectorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD371F2D621D7000050FB6 /* InjectorProtocol.swift */; };
 		CECD372A2D621DEF00050FB6 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37282D621DEF00050FB6 /* Builder.swift */; };
-		CECD372E2D621EC400050FB6 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD372D2D621EC400050FB6 /* DataStorage.swift */; };
-		CECD37302D621EF100050FB6 /* DataStorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD372F2D621EF100050FB6 /* DataStorageProtocol.swift */; };
+		CECD372E2D621EC400050FB6 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD372D2D621EC400050FB6 /* Storage.swift */; };
+		CECD37302D621EF100050FB6 /* StorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD372F2D621EF100050FB6 /* StorageProtocol.swift */; };
 		CECD37392D62216C00050FB6 /* FileManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37372D62216C00050FB6 /* FileManagerProtocol.swift */; };
 		CECD37402D62234700050FB6 /* FileManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD373E2D62234700050FB6 /* FileManagerExtension.swift */; };
 		CECD37462D62244300050FB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECD37442D62244300050FB6 /* LaunchScreen.storyboard */; };
@@ -27,6 +27,29 @@
 		CECD37642D622C0C00050FB6 /* AppCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37632D622C0C00050FB6 /* AppCoordinatorProtocol.swift */; };
 		CECD37682D622C4E00050FB6 /* AppBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37672D622C4E00050FB6 /* AppBuilder.swift */; };
 		CECD376A2D622C5400050FB6 /* AppBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37692D622C5400050FB6 /* AppBuilderProtocol.swift */; };
+		CECD37742D62426D00050FB6 /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37732D62426D00050FB6 /* SplashCoordinator.swift */; };
+		CECD37762D62427C00050FB6 /* SplashCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37752D62427C00050FB6 /* SplashCoordinatorProtocol.swift */; };
+		CECD377C2D62445A00050FB6 /* SplashBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD377B2D62445A00050FB6 /* SplashBuilder.swift */; };
+		CECD377E2D62447300050FB6 /* SplashBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD377D2D62447300050FB6 /* SplashBuilderProtocol.swift */; };
+		CECD37822D624CF100050FB6 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37812D624CF100050FB6 /* SplashViewController.swift */; };
+		CECD37862D624D1D00050FB6 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37852D624D1D00050FB6 /* SplashViewModel.swift */; };
+		CECD37882D624D2900050FB6 /* SplashViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37872D624D2900050FB6 /* SplashViewModelProtocol.swift */; };
+		CECD37902D624D5400050FB6 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD378E2D624D5400050FB6 /* SplashView.swift */; };
+		CECD37922D624D6000050FB6 /* SplashViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37912D624D6000050FB6 /* SplashViewProtocol.swift */; };
+		CECD37942D624F9900050FB6 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37932D624F9900050FB6 /* NavigationCoordinator.swift */; };
+		CECD37962D624FBE00050FB6 /* NavigationCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37952D624FBE00050FB6 /* NavigationCoordinatorProtocol.swift */; };
+		CECD37982D624FDA00050FB6 /* NavigationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37972D624FDA00050FB6 /* NavigationViewModel.swift */; };
+		CECD379A2D624FEC00050FB6 /* NavigationViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37992D624FEC00050FB6 /* NavigationViewModelProtocol.swift */; };
+		CECD379C2D62502000050FB6 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD379B2D62502000050FB6 /* NavigationView.swift */; };
+		CECD379E2D62502800050FB6 /* NavigationViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD379D2D62502800050FB6 /* NavigationViewProtocol.swift */; };
+		CECD37A62D6250F300050FB6 /* NavigationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37A42D6250F300050FB6 /* NavigationBuilder.swift */; };
+		CECD37A82D62510F00050FB6 /* NavigationBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37A72D62510F00050FB6 /* NavigationBuilderProtocol.swift */; };
+		CECD37AB2D6257CA00050FB6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CECD37AA2D6257CA00050FB6 /* SnapKit */; };
+		CECD37B12D625AAA00050FB6 /* SplashModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37AF2D625AAA00050FB6 /* SplashModels.swift */; };
+		CECD37B32D62648A00050FB6 /* SplashCoordinatorExitProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37B22D62648A00050FB6 /* SplashCoordinatorExitProtocol.swift */; };
+		CECD37B72D6268E200050FB6 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37B62D6268E200050FB6 /* URLSessionProtocol.swift */; };
+		CECD37B92D62690000050FB6 /* URLSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37B82D62690000050FB6 /* URLSessionExtension.swift */; };
+		CECD37BB2D626B0100050FB6 /* NavigationCoordinatorRouteProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37BA2D626B0100050FB6 /* NavigationCoordinatorRouteProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +60,8 @@
 		CECD371A2D621AE200050FB6 /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
 		CECD371F2D621D7000050FB6 /* InjectorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectorProtocol.swift; sourceTree = "<group>"; };
 		CECD37282D621DEF00050FB6 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
-		CECD372D2D621EC400050FB6 /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
-		CECD372F2D621EF100050FB6 /* DataStorageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorageProtocol.swift; sourceTree = "<group>"; };
+		CECD372D2D621EC400050FB6 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		CECD372F2D621EF100050FB6 /* StorageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageProtocol.swift; sourceTree = "<group>"; };
 		CECD37372D62216C00050FB6 /* FileManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerProtocol.swift; sourceTree = "<group>"; };
 		CECD373E2D62234700050FB6 /* FileManagerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtension.swift; sourceTree = "<group>"; };
 		CECD37432D62244300050FB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,6 +75,28 @@
 		CECD37632D622C0C00050FB6 /* AppCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorProtocol.swift; sourceTree = "<group>"; };
 		CECD37672D622C4E00050FB6 /* AppBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBuilder.swift; sourceTree = "<group>"; };
 		CECD37692D622C5400050FB6 /* AppBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBuilderProtocol.swift; sourceTree = "<group>"; };
+		CECD37732D62426D00050FB6 /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
+		CECD37752D62427C00050FB6 /* SplashCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		CECD377B2D62445A00050FB6 /* SplashBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashBuilder.swift; sourceTree = "<group>"; };
+		CECD377D2D62447300050FB6 /* SplashBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashBuilderProtocol.swift; sourceTree = "<group>"; };
+		CECD37812D624CF100050FB6 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		CECD37852D624D1D00050FB6 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		CECD37872D624D2900050FB6 /* SplashViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModelProtocol.swift; sourceTree = "<group>"; };
+		CECD378E2D624D5400050FB6 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		CECD37912D624D6000050FB6 /* SplashViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewProtocol.swift; sourceTree = "<group>"; };
+		CECD37932D624F9900050FB6 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
+		CECD37952D624FBE00050FB6 /* NavigationCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		CECD37972D624FDA00050FB6 /* NavigationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewModel.swift; sourceTree = "<group>"; };
+		CECD37992D624FEC00050FB6 /* NavigationViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewModelProtocol.swift; sourceTree = "<group>"; };
+		CECD379B2D62502000050FB6 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
+		CECD379D2D62502800050FB6 /* NavigationViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewProtocol.swift; sourceTree = "<group>"; };
+		CECD37A42D6250F300050FB6 /* NavigationBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBuilder.swift; sourceTree = "<group>"; };
+		CECD37A72D62510F00050FB6 /* NavigationBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBuilderProtocol.swift; sourceTree = "<group>"; };
+		CECD37AF2D625AAA00050FB6 /* SplashModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashModels.swift; sourceTree = "<group>"; };
+		CECD37B22D62648A00050FB6 /* SplashCoordinatorExitProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinatorExitProtocol.swift; sourceTree = "<group>"; };
+		CECD37B62D6268E200050FB6 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		CECD37B82D62690000050FB6 /* URLSessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionExtension.swift; sourceTree = "<group>"; };
+		CECD37BA2D626B0100050FB6 /* NavigationCoordinatorRouteProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinatorRouteProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CECD37AB2D6257CA00050FB6 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +141,9 @@
 		CECD37042D62197C00050FB6 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				CECD37932D624F9900050FB6 /* NavigationCoordinator.swift */,
+				CECD37952D624FBE00050FB6 /* NavigationCoordinatorProtocol.swift */,
+				CECD37BA2D626B0100050FB6 /* NavigationCoordinatorRouteProtocol.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -102,6 +151,8 @@
 		CECD37052D62197C00050FB6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CECD379B2D62502000050FB6 /* NavigationView.swift */,
+				CECD379D2D62502800050FB6 /* NavigationViewProtocol.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -117,6 +168,8 @@
 		CECD37082D62197C00050FB6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				CECD37972D624FDA00050FB6 /* NavigationViewModel.swift */,
+				CECD37992D624FEC00050FB6 /* NavigationViewModelProtocol.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -124,6 +177,7 @@
 		CECD37092D62197C00050FB6 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				CECD37A52D6250F300050FB6 /* Builder */,
 				CECD37042D62197C00050FB6 /* Coordinator */,
 				CECD37082D62197C00050FB6 /* ViewModel */,
 				CECD37072D62197C00050FB6 /* ViewController */,
@@ -136,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				CECD370A2D62197C00050FB6 /* Assets.xcassets */,
+				CECD37782D62430000050FB6 /* Localization */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -145,7 +200,7 @@
 			children = (
 				CECD37292D621DEF00050FB6 /* Builder */,
 				CECD371B2D621AE200050FB6 /* Injector */,
-				CECD372C2D621EB000050FB6 /* DataStorage */,
+				CECD372C2D621EB000050FB6 /* Storage */,
 				CECD37382D62216C00050FB6 /* Protocols */,
 			);
 			path = Services;
@@ -191,13 +246,13 @@
 			path = Builder;
 			sourceTree = "<group>";
 		};
-		CECD372C2D621EB000050FB6 /* DataStorage */ = {
+		CECD372C2D621EB000050FB6 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
-				CECD372D2D621EC400050FB6 /* DataStorage.swift */,
-				CECD372F2D621EF100050FB6 /* DataStorageProtocol.swift */,
+				CECD372D2D621EC400050FB6 /* Storage.swift */,
+				CECD372F2D621EF100050FB6 /* StorageProtocol.swift */,
 			);
-			path = DataStorage;
+			path = Storage;
 			sourceTree = "<group>";
 		};
 		CECD37382D62216C00050FB6 /* Protocols */ = {
@@ -205,6 +260,7 @@
 			children = (
 				CECD37372D62216C00050FB6 /* FileManagerProtocol.swift */,
 				CECD37532D62271000050FB6 /* LoggerProtocol.swift */,
+				CECD37B62D6268E200050FB6 /* URLSessionProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -214,6 +270,7 @@
 			children = (
 				CECD373E2D62234700050FB6 /* FileManagerExtension.swift */,
 				CECD37512D62267800050FB6 /* NSObjectExtension.swift */,
+				CECD37B82D62690000050FB6 /* URLSessionExtension.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -281,8 +338,83 @@
 		CECD376E2D62387C00050FB6 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				CECD37722D62420F00050FB6 /* Builder */,
+				CECD37712D62420F00050FB6 /* Coordinator */,
+				CECD37842D624D1400050FB6 /* ViewModel */,
+				CECD37802D624CDC00050FB6 /* ViewController */,
+				CECD378F2D624D5400050FB6 /* View */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		CECD37712D62420F00050FB6 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				CECD37732D62426D00050FB6 /* SplashCoordinator.swift */,
+				CECD37752D62427C00050FB6 /* SplashCoordinatorProtocol.swift */,
+				CECD37B22D62648A00050FB6 /* SplashCoordinatorExitProtocol.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		CECD37722D62420F00050FB6 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				CECD377B2D62445A00050FB6 /* SplashBuilder.swift */,
+				CECD377D2D62447300050FB6 /* SplashBuilderProtocol.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		CECD37782D62430000050FB6 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		CECD37802D624CDC00050FB6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CECD37812D624CF100050FB6 /* SplashViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CECD37842D624D1400050FB6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CECD37852D624D1D00050FB6 /* SplashViewModel.swift */,
+				CECD37872D624D2900050FB6 /* SplashViewModelProtocol.swift */,
+				CECD37B02D625AAA00050FB6 /* Models */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CECD378F2D624D5400050FB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CECD378E2D624D5400050FB6 /* SplashView.swift */,
+				CECD37912D624D6000050FB6 /* SplashViewProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CECD37A52D6250F300050FB6 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				CECD37A42D6250F300050FB6 /* NavigationBuilder.swift */,
+				CECD37A72D62510F00050FB6 /* NavigationBuilderProtocol.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		CECD37B02D625AAA00050FB6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CECD37AF2D625AAA00050FB6 /* SplashModels.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +434,7 @@
 			);
 			name = "Autodoc News";
 			packageProductDependencies = (
+				CECD37AA2D6257CA00050FB6 /* SnapKit */,
 			);
 			productName = "Autodoc News";
 			productReference = CECD36AB2D60DFCA00050FB6 /* Autodoc News.app */;
@@ -331,6 +464,9 @@
 			);
 			mainGroup = CECD36A22D60DFCA00050FB6;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CECD37A92D6257CA00050FB6 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CECD36AC2D60DFCA00050FB6 /* Products */;
 			projectDirPath = "";
@@ -358,24 +494,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CECD37882D624D2900050FB6 /* SplashViewModelProtocol.swift in Sources */,
 				CECD37402D62234700050FB6 /* FileManagerExtension.swift in Sources */,
 				CECD376A2D622C5400050FB6 /* AppBuilderProtocol.swift in Sources */,
 				CECD375C2D622A2B00050FB6 /* DateExtension.swift in Sources */,
 				CECD37502D62266700050FB6 /* LoggerExtension.swift in Sources */,
 				CECD37392D62216C00050FB6 /* FileManagerProtocol.swift in Sources */,
+				CECD37982D624FDA00050FB6 /* NavigationViewModel.swift in Sources */,
+				CECD37822D624CF100050FB6 /* SplashViewController.swift in Sources */,
+				CECD37BB2D626B0100050FB6 /* NavigationCoordinatorRouteProtocol.swift in Sources */,
+				CECD37922D624D6000050FB6 /* SplashViewProtocol.swift in Sources */,
+				CECD377C2D62445A00050FB6 /* SplashBuilder.swift in Sources */,
+				CECD37942D624F9900050FB6 /* NavigationCoordinator.swift in Sources */,
+				CECD37742D62426D00050FB6 /* SplashCoordinator.swift in Sources */,
+				CECD37B72D6268E200050FB6 /* URLSessionProtocol.swift in Sources */,
 				CECD37522D62267800050FB6 /* NSObjectExtension.swift in Sources */,
+				CECD379E2D62502800050FB6 /* NavigationViewProtocol.swift in Sources */,
+				CECD377E2D62447300050FB6 /* SplashBuilderProtocol.swift in Sources */,
+				CECD37762D62427C00050FB6 /* SplashCoordinatorProtocol.swift in Sources */,
 				CECD37202D621D7000050FB6 /* InjectorProtocol.swift in Sources */,
 				CECD37492D62244300050FB6 /* AppDelegate.swift in Sources */,
 				CECD37682D622C4E00050FB6 /* AppBuilder.swift in Sources */,
 				CECD371C2D621AE200050FB6 /* Injector.swift in Sources */,
-				CECD37302D621EF100050FB6 /* DataStorageProtocol.swift in Sources */,
-				CECD372E2D621EC400050FB6 /* DataStorage.swift in Sources */,
+				CECD37B92D62690000050FB6 /* URLSessionExtension.swift in Sources */,
+				CECD37B32D62648A00050FB6 /* SplashCoordinatorExitProtocol.swift in Sources */,
+				CECD37862D624D1D00050FB6 /* SplashViewModel.swift in Sources */,
+				CECD37A62D6250F300050FB6 /* NavigationBuilder.swift in Sources */,
+				CECD37302D621EF100050FB6 /* StorageProtocol.swift in Sources */,
+				CECD37962D624FBE00050FB6 /* NavigationCoordinatorProtocol.swift in Sources */,
+				CECD37B12D625AAA00050FB6 /* SplashModels.swift in Sources */,
+				CECD372E2D621EC400050FB6 /* Storage.swift in Sources */,
 				CECD37542D62271000050FB6 /* LoggerProtocol.swift in Sources */,
 				CECD375A2D6227CA00050FB6 /* LoggerProtocolExtension.swift in Sources */,
+				CECD379A2D624FEC00050FB6 /* NavigationViewModelProtocol.swift in Sources */,
+				CECD379C2D62502000050FB6 /* NavigationView.swift in Sources */,
+				CECD37902D624D5400050FB6 /* SplashView.swift in Sources */,
 				CECD37622D622BF500050FB6 /* AppCoordinator.swift in Sources */,
 				CECD37132D62197C00050FB6 /* ViewController.swift in Sources */,
 				CECD37642D622C0C00050FB6 /* AppCoordinatorProtocol.swift in Sources */,
 				CECD372A2D621DEF00050FB6 /* Builder.swift in Sources */,
+				CECD37A82D62510F00050FB6 /* NavigationBuilderProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,7 +565,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -439,7 +597,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -598,6 +756,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CECD37A92D6257CA00050FB6 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = exactVersion;
+				version = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CECD37AA2D6257CA00050FB6 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CECD37A92D6257CA00050FB6 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CECD36A32D60DFCA00050FB6 /* Project object */;
 }

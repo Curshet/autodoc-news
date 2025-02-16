@@ -4,7 +4,7 @@ extension Date {
     
     var utf: String {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss Z"
+        dateFormatter.dateFormat = "dd.MM.yyyy HH:mm:ss"
         return dateFormatter.string(from: self)
     }
     

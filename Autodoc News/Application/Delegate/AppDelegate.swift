@@ -10,7 +10,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         injector = Injector()
         builder = AppBuilder(injector: injector)
-        coordinator = builder?.coordinator
+        coordinator = builder?.appCoordinator
         guard let coordinator else { return false }
         return coordinator.start()
     }

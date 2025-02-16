@@ -1,5 +1,7 @@
 import Foundation
 
 protocol AppBuilderProtocol {
-    var coordinator: AppCoordinatorProtocol? { get }
+    var appCoordinator: AppCoordinatorProtocol? { get }
+    var splashCoordinator: SplashCoordinatorProtocol? { get }
+    var navigationCoordinator: NavigationCoordinatorProtocol? { get }
 }
