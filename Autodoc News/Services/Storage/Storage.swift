@@ -13,7 +13,7 @@ class Storage: NSObject, StorageProtocol {
     
 }
 
-// MARK: Public
+// MARK: Protocol
 extension Storage {
     
     func getFile(from: DataStorageDirectory, name: String) -> Data? {
@@ -97,6 +97,7 @@ extension Storage {
             }
         }
     }
+    
 }
 
 // MARK: - DataStorageMessage

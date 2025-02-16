@@ -18,12 +18,12 @@ extension FileManager: FileManagerProtocol {
     
     @discardableResult func createDirectory(name: String) -> URL? {
         guard !name.isEmpty else {
-            logger.print(FileManagerMessage.directoryName)
+            logger.print("File manager directory creating error for empty or unavaliable name")
             return nil
         }
         
         guard let url = path(target: .catalog(name)) else {
-            logger.print(FileManagerMessage.directoryPath)
+            logger.print("File manager directory creating error for unavaliable URL")
             return nil
         }
         
@@ -33,16 +33,9 @@ extension FileManager: FileManagerProtocol {
             try createDirectory(atPath: url.path, withIntermediateDirectories: true)
             return url
         } catch {
-            logger.print(FileManagerMessage.directoryCreating + "\(error)")
+            logger.print("File manager directory creating error: \(error)")
             return nil
         }
     }
     
-}
-
-// MARK: - FileManagerMessage
-fileprivate enum FileManagerMessage {
-    static let directoryName = "File manager directory creating error for empty or unavaliable name"
-    static let directoryPath = "File manager directory creating error for unavaliable URL"
-    static let directoryCreating = "File manager directory creating error: "
 }
