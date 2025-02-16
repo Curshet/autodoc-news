@@ -14,19 +14,11 @@
 			remoteGlobalIDString = CECD36AA2D60DFCA00050FB6;
 			remoteInfo = "Autodoc News";
 		};
-		CECD36CF2D60DFCC00050FB6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CECD36A32D60DFCA00050FB6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CECD36AA2D60DFCA00050FB6;
-			remoteInfo = "Autodoc News";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CECD36AB2D60DFCA00050FB6 /* Autodoc News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Autodoc News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CECD36C42D60DFCC00050FB6 /* Autodoc NewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Autodoc NewsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CECD36CE2D60DFCC00050FB6 /* Autodoc NewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Autodoc NewsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECD36C42D60DFCC00050FB6 /* Unit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -48,14 +40,9 @@
 			path = "Autodoc News";
 			sourceTree = "<group>";
 		};
-		CECD36C72D60DFCC00050FB6 /* Autodoc NewsTests */ = {
+		CECD36C72D60DFCC00050FB6 /* Unit Tests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Autodoc NewsTests";
-			sourceTree = "<group>";
-		};
-		CECD36D12D60DFCC00050FB6 /* Autodoc NewsUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Autodoc NewsUITests";
+			path = "Unit Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,13 +62,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CECD36CB2D60DFCC00050FB6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -89,8 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				CECD36AD2D60DFCA00050FB6 /* Autodoc News */,
-				CECD36C72D60DFCC00050FB6 /* Autodoc NewsTests */,
-				CECD36D12D60DFCC00050FB6 /* Autodoc NewsUITests */,
+				CECD36C72D60DFCC00050FB6 /* Unit Tests */,
 				CECD36AC2D60DFCA00050FB6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,8 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				CECD36AB2D60DFCA00050FB6 /* Autodoc News.app */,
-				CECD36C42D60DFCC00050FB6 /* Autodoc NewsTests.xctest */,
-				CECD36CE2D60DFCC00050FB6 /* Autodoc NewsUITests.xctest */,
+				CECD36C42D60DFCC00050FB6 /* Unit Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,9 +108,9 @@
 			productReference = CECD36AB2D60DFCA00050FB6 /* Autodoc News.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CECD36C32D60DFCC00050FB6 /* Autodoc NewsTests */ = {
+		CECD36C32D60DFCC00050FB6 /* Unit Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CECD36DC2D60DFCC00050FB6 /* Build configuration list for PBXNativeTarget "Autodoc NewsTests" */;
+			buildConfigurationList = CECD36DC2D60DFCC00050FB6 /* Build configuration list for PBXNativeTarget "Unit Tests" */;
 			buildPhases = (
 				CECD36C02D60DFCC00050FB6 /* Sources */,
 				CECD36C12D60DFCC00050FB6 /* Frameworks */,
@@ -144,37 +122,14 @@
 				CECD36C62D60DFCC00050FB6 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				CECD36C72D60DFCC00050FB6 /* Autodoc NewsTests */,
+				CECD36C72D60DFCC00050FB6 /* Unit Tests */,
 			);
-			name = "Autodoc NewsTests";
+			name = "Unit Tests";
 			packageProductDependencies = (
 			);
 			productName = "Autodoc NewsTests";
-			productReference = CECD36C42D60DFCC00050FB6 /* Autodoc NewsTests.xctest */;
+			productReference = CECD36C42D60DFCC00050FB6 /* Unit Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		CECD36CD2D60DFCC00050FB6 /* Autodoc NewsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CECD36DF2D60DFCC00050FB6 /* Build configuration list for PBXNativeTarget "Autodoc NewsUITests" */;
-			buildPhases = (
-				CECD36CA2D60DFCC00050FB6 /* Sources */,
-				CECD36CB2D60DFCC00050FB6 /* Frameworks */,
-				CECD36CC2D60DFCC00050FB6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CECD36D02D60DFCC00050FB6 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				CECD36D12D60DFCC00050FB6 /* Autodoc NewsUITests */,
-			);
-			name = "Autodoc NewsUITests";
-			packageProductDependencies = (
-			);
-			productName = "Autodoc NewsUITests";
-			productReference = CECD36CE2D60DFCC00050FB6 /* Autodoc NewsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -190,10 +145,6 @@
 						CreatedOnToolsVersion = 16.2;
 					};
 					CECD36C32D60DFCC00050FB6 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = CECD36AA2D60DFCA00050FB6;
-					};
-					CECD36CD2D60DFCC00050FB6 = {
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = CECD36AA2D60DFCA00050FB6;
 					};
@@ -214,8 +165,7 @@
 			projectRoot = "";
 			targets = (
 				CECD36AA2D60DFCA00050FB6 /* Autodoc News */,
-				CECD36C32D60DFCC00050FB6 /* Autodoc NewsTests */,
-				CECD36CD2D60DFCC00050FB6 /* Autodoc NewsUITests */,
+				CECD36C32D60DFCC00050FB6 /* Unit Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -229,13 +179,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CECD36C22D60DFCC00050FB6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CECD36CC2D60DFCC00050FB6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,13 +202,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CECD36CA2D60DFCC00050FB6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -273,11 +209,6 @@
 			isa = PBXTargetDependency;
 			target = CECD36AA2D60DFCA00050FB6 /* Autodoc News */;
 			targetProxy = CECD36C52D60DFCC00050FB6 /* PBXContainerItemProxy */;
-		};
-		CECD36D02D60DFCC00050FB6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CECD36AA2D60DFCA00050FB6 /* Autodoc News */;
-			targetProxy = CECD36CF2D60DFCC00050FB6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -294,19 +225,23 @@
 				INFOPLIST_FILE = "Autodoc News/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.test.autodoc.Autodoc-News";
+				PRODUCT_BUNDLE_IDENTIFIER = com.autodoc.news;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -322,19 +257,23 @@
 				INFOPLIST_FILE = "Autodoc News/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.test.autodoc.Autodoc-News";
+				PRODUCT_BUNDLE_IDENTIFIER = com.autodoc.news;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -465,13 +404,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M2AV5R5DQ2;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.test.autodoc.Autodoc-NewsTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autodoc.unit-tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Autodoc News.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Autodoc News";
 			};
 			name = Debug;
@@ -484,48 +427,18 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M2AV5R5DQ2;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.test.autodoc.Autodoc-NewsTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autodoc.unit-tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Autodoc News.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Autodoc News";
-			};
-			name = Release;
-		};
-		CECD36E02D60DFCC00050FB6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M2AV5R5DQ2;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.test.autodoc.Autodoc-NewsUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Autodoc News";
-			};
-			name = Debug;
-		};
-		CECD36E12D60DFCC00050FB6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M2AV5R5DQ2;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.test.autodoc.Autodoc-NewsUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Autodoc News";
 			};
 			name = Release;
 		};
@@ -550,20 +463,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CECD36DC2D60DFCC00050FB6 /* Build configuration list for PBXNativeTarget "Autodoc NewsTests" */ = {
+		CECD36DC2D60DFCC00050FB6 /* Build configuration list for PBXNativeTarget "Unit Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CECD36DD2D60DFCC00050FB6 /* Debug */,
 				CECD36DE2D60DFCC00050FB6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CECD36DF2D60DFCC00050FB6 /* Build configuration list for PBXNativeTarget "Autodoc NewsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CECD36E02D60DFCC00050FB6 /* Debug */,
-				CECD36E12D60DFCC00050FB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
