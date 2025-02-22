@@ -1,3 +1,6 @@
 import UIKit
+import Combine
 
-protocol NavigationViewDelegateProtocol: UICollectionViewDelegateFlowLayout {}
+protocol NavigationViewDelegateProtocol: UICollectionViewDelegateFlowLayout {
+    var externalEvent: AnyPublisher<Int, Never> { get }
+}

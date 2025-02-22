@@ -7,7 +7,7 @@ class Storage: NSObject, StorageProtocol {
     
     init(fileManager: FileManagerProtocol) {
         self.fileManager = fileManager
-        self.queue = DispatchQueue(label: "com.autodoc.news.dataStorage.concurrent", attributes: .concurrent)
+        self.queue = DispatchQueue(label: Bundle.main.identifier + ".dataStorage.concurrent", attributes: .concurrent)
         super.init()
     }
     

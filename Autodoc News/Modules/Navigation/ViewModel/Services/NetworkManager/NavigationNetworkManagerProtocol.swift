@@ -2,6 +2,6 @@ import Foundation
 import Combine
 
 protocol NavigationNetworkManagerProtocol {
-    var requestEvent: PassthroughSubject<String, Never> { get }
-    var responseEvent: AnyPublisher<Result<NewsData, Error>, Never> { get }
+    var requestEvent: PassthroughSubject<NavigationNetworkManagerRequest, Never> { get }
+    var responseEvent: AnyPublisher<NavigationNetworkManagerResponse, Never> { get }
 }

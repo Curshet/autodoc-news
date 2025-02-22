@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE35C00A2D668C64001907FD /* UserDefaultsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35C0092D668C64001907FD /* UserDefaultsProtocol.swift */; };
+		CE35C00C2D668C82001907FD /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35C00B2D668C82001907FD /* UserDefaultsExtension.swift */; };
 		CE38068C2D6272CF00E0CBFE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE38068A2D6272CF00E0CBFE /* InfoPlist.strings */; };
 		CE3806932D6274DC00E0CBFE /* NavigationNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3806922D6274DC00E0CBFE /* NavigationNetworkManager.swift */; };
 		CE3806952D6274EE00E0CBFE /* NavigationNetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3806942D6274EE00E0CBFE /* NavigationNetworkManagerProtocol.swift */; };
@@ -18,7 +20,13 @@
 		CE3806A92D629A5400E0CBFE /* NavigationViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3806A82D629A5400E0CBFE /* NavigationViewDataSource.swift */; };
 		CE3806AB2D629AA100E0CBFE /* NavigationViewDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3806AA2D629AA100E0CBFE /* NavigationViewDataSourceProtocol.swift */; };
 		CE3806AF2D62A30800E0CBFE /* UICollectionViewDataSourceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3806AE2D62A30800E0CBFE /* UICollectionViewDataSourceExtension.swift */; };
-		CE3806B12D62A37700E0CBFE /* NavigationViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3806B02D62A37700E0CBFE /* NavigationViewCell.swift */; };
+		CE3806B12D62A37700E0CBFE /* NavigationNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3806B02D62A37700E0CBFE /* NavigationNewsCell.swift */; };
+		CE3806B32D63D01100E0CBFE /* NavigationBuilderCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3806B22D63D01100E0CBFE /* NavigationBuilderCellProtocol.swift */; };
+		CE3806BA2D63DB9600E0CBFE /* NavigationNewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3806B82D63DB9600E0CBFE /* NavigationNewsView.swift */; };
+		CE3806BC2D63DBA200E0CBFE /* NavigationNewsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3806BB2D63DBA200E0CBFE /* NavigationNewsViewProtocol.swift */; };
+		CE3806BE2D63DDED00E0CBFE /* NavigationNewsCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3806BD2D63DDED00E0CBFE /* NavigationNewsCellProtocol.swift */; };
+		CE3806C02D64A44500E0CBFE /* NSErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3806BF2D64A44500E0CBFE /* NSErrorExtension.swift */; };
+		CE3806C22D64A4DC00E0CBFE /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3806C12D64A4DC00E0CBFE /* BundleExtension.swift */; };
 		CECD37102D62197C00050FB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CECD370A2D62197C00050FB6 /* Assets.xcassets */; };
 		CECD37132D62197C00050FB6 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD37062D62197C00050FB6 /* NavigationViewController.swift */; };
 		CECD371C2D621AE200050FB6 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD371A2D621AE200050FB6 /* Injector.swift */; };
@@ -65,6 +73,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE35C0092D668C64001907FD /* UserDefaultsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsProtocol.swift; sourceTree = "<group>"; };
+		CE35C00B2D668C82001907FD /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
 		CE38068B2D6272CF00E0CBFE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE38068D2D6272E600E0CBFE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE3806922D6274DC00E0CBFE /* NavigationNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationNetworkManager.swift; sourceTree = "<group>"; };
@@ -77,7 +87,13 @@
 		CE3806A82D629A5400E0CBFE /* NavigationViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewDataSource.swift; sourceTree = "<group>"; };
 		CE3806AA2D629AA100E0CBFE /* NavigationViewDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewDataSourceProtocol.swift; sourceTree = "<group>"; };
 		CE3806AE2D62A30800E0CBFE /* UICollectionViewDataSourceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewDataSourceExtension.swift; sourceTree = "<group>"; };
-		CE3806B02D62A37700E0CBFE /* NavigationViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewCell.swift; sourceTree = "<group>"; };
+		CE3806B02D62A37700E0CBFE /* NavigationNewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationNewsCell.swift; sourceTree = "<group>"; };
+		CE3806B22D63D01100E0CBFE /* NavigationBuilderCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBuilderCellProtocol.swift; sourceTree = "<group>"; };
+		CE3806B82D63DB9600E0CBFE /* NavigationNewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationNewsView.swift; sourceTree = "<group>"; };
+		CE3806BB2D63DBA200E0CBFE /* NavigationNewsViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationNewsViewProtocol.swift; sourceTree = "<group>"; };
+		CE3806BD2D63DDED00E0CBFE /* NavigationNewsCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationNewsCellProtocol.swift; sourceTree = "<group>"; };
+		CE3806BF2D64A44500E0CBFE /* NSErrorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSErrorExtension.swift; sourceTree = "<group>"; };
+		CE3806C12D64A4DC00E0CBFE /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		CECD36AB2D60DFCA00050FB6 /* Autodoc News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Autodoc News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECD37062D62197C00050FB6 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		CECD370A2D62197C00050FB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -182,9 +198,20 @@
 		CE3806AD2D62A1A900E0CBFE /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				CE3806B02D62A37700E0CBFE /* NavigationViewCell.swift */,
+				CE3806B02D62A37700E0CBFE /* NavigationNewsCell.swift */,
+				CE3806BD2D63DDED00E0CBFE /* NavigationNewsCellProtocol.swift */,
+				CE3806B92D63DB9600E0CBFE /* View */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		CE3806B92D63DB9600E0CBFE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE3806B82D63DB9600E0CBFE /* NavigationNewsView.swift */,
+				CE3806BB2D63DBA200E0CBFE /* NavigationNewsViewProtocol.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		CECD36A22D60DFCA00050FB6 = {
@@ -343,6 +370,7 @@
 				CECD37532D62271000050FB6 /* LoggerProtocol.swift */,
 				CECD37B62D6268E200050FB6 /* URLSessionProtocol.swift */,
 				CE3806962D627B0E00E0CBFE /* JSONDecoderProtocol.swift */,
+				CE35C0092D668C64001907FD /* UserDefaultsProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -355,6 +383,9 @@
 				CECD37B82D62690000050FB6 /* URLSessionExtension.swift */,
 				CE3806982D627B4400E0CBFE /* JSONDecoderExtension.swift */,
 				CE3806AE2D62A30800E0CBFE /* UICollectionViewDataSourceExtension.swift */,
+				CE3806BF2D64A44500E0CBFE /* NSErrorExtension.swift */,
+				CE3806C12D64A4DC00E0CBFE /* BundleExtension.swift */,
+				CE35C00B2D668C82001907FD /* UserDefaultsExtension.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -490,6 +521,7 @@
 			children = (
 				CECD37A42D6250F300050FB6 /* NavigationBuilder.swift */,
 				CECD37A72D62510F00050FB6 /* NavigationBuilderProtocol.swift */,
+				CE3806B22D63D01100E0CBFE /* NavigationBuilderCellProtocol.swift */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -582,7 +614,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CECD37882D624D2900050FB6 /* SplashViewModelProtocol.swift in Sources */,
-				CE3806B12D62A37700E0CBFE /* NavigationViewCell.swift in Sources */,
+				CE3806B12D62A37700E0CBFE /* NavigationNewsCell.swift in Sources */,
+				CE3806BC2D63DBA200E0CBFE /* NavigationNewsViewProtocol.swift in Sources */,
 				CECD37402D62234700050FB6 /* FileManagerExtension.swift in Sources */,
 				CE3806952D6274EE00E0CBFE /* NavigationNetworkManagerProtocol.swift in Sources */,
 				CECD376A2D622C5400050FB6 /* AppBuilderProtocol.swift in Sources */,
@@ -593,6 +626,7 @@
 				CECD37982D624FDA00050FB6 /* NavigationViewModel.swift in Sources */,
 				CECD37822D624CF100050FB6 /* SplashViewController.swift in Sources */,
 				CECD37BB2D626B0100050FB6 /* NavigationCoordinatorRouteProtocol.swift in Sources */,
+				CE35C00C2D668C82001907FD /* UserDefaultsExtension.swift in Sources */,
 				CECD37922D624D6000050FB6 /* SplashViewProtocol.swift in Sources */,
 				CECD377C2D62445A00050FB6 /* SplashBuilder.swift in Sources */,
 				CECD37942D624F9900050FB6 /* NavigationCoordinator.swift in Sources */,
@@ -603,8 +637,10 @@
 				CECD379E2D62502800050FB6 /* NavigationViewProtocol.swift in Sources */,
 				CE3806A72D629A0D00E0CBFE /* NavigationViewDelegateProtocol.swift in Sources */,
 				CE3806992D627B4400E0CBFE /* JSONDecoderExtension.swift in Sources */,
+				CE3806C22D64A4DC00E0CBFE /* BundleExtension.swift in Sources */,
 				CECD377E2D62447300050FB6 /* SplashBuilderProtocol.swift in Sources */,
 				CECD37762D62427C00050FB6 /* SplashCoordinatorProtocol.swift in Sources */,
+				CE3806C02D64A44500E0CBFE /* NSErrorExtension.swift in Sources */,
 				CECD37202D621D7000050FB6 /* InjectorProtocol.swift in Sources */,
 				CECD37492D62244300050FB6 /* AppDelegate.swift in Sources */,
 				CECD37682D622C4E00050FB6 /* AppBuilder.swift in Sources */,
@@ -616,11 +652,13 @@
 				CE3806A52D6299C100E0CBFE /* NavigationViewDelegate.swift in Sources */,
 				CE3806A92D629A5400E0CBFE /* NavigationViewDataSource.swift in Sources */,
 				CECD37302D621EF100050FB6 /* StorageProtocol.swift in Sources */,
+				CE3806B32D63D01100E0CBFE /* NavigationBuilderCellProtocol.swift in Sources */,
 				CECD37962D624FBE00050FB6 /* NavigationCoordinatorProtocol.swift in Sources */,
 				CE3806AF2D62A30800E0CBFE /* UICollectionViewDataSourceExtension.swift in Sources */,
 				CECD37B12D625AAA00050FB6 /* SplashModels.swift in Sources */,
 				CECD372E2D621EC400050FB6 /* Storage.swift in Sources */,
 				CECD37542D62271000050FB6 /* LoggerProtocol.swift in Sources */,
+				CE35C00A2D668C64001907FD /* UserDefaultsProtocol.swift in Sources */,
 				CECD375A2D6227CA00050FB6 /* LoggerProtocolExtension.swift in Sources */,
 				CECD379A2D624FEC00050FB6 /* NavigationViewModelProtocol.swift in Sources */,
 				CE3806932D6274DC00E0CBFE /* NavigationNetworkManager.swift in Sources */,
@@ -628,6 +666,8 @@
 				CECD37902D624D5400050FB6 /* SplashView.swift in Sources */,
 				CE38069F2D627C7B00E0CBFE /* NavigationModels.swift in Sources */,
 				CECD37622D622BF500050FB6 /* AppCoordinator.swift in Sources */,
+				CE3806BE2D63DDED00E0CBFE /* NavigationNewsCellProtocol.swift in Sources */,
+				CE3806BA2D63DB9600E0CBFE /* NavigationNewsView.swift in Sources */,
 				CECD37132D62197C00050FB6 /* NavigationViewController.swift in Sources */,
 				CECD37642D622C0C00050FB6 /* AppCoordinatorProtocol.swift in Sources */,
 				CECD372A2D621DEF00050FB6 /* Builder.swift in Sources */,

@@ -7,7 +7,7 @@ final class Injector: InjectorProtocol {
     
     init() {
         self.containers = [InjectorKey : InjectorContainer]()
-        self.queue = DispatchQueue(label: "com.autodoc.news.injector.concurrent", attributes: .concurrent)
+        self.queue = DispatchQueue(label: Bundle.main.identifier + ".injector.concurrent", attributes: .concurrent)
     }
     
     func register<T>(_ object: T, in container: InjectorKey) {

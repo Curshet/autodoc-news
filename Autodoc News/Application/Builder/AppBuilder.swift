@@ -15,8 +15,8 @@ private extension AppBuilder {
     
     func register() {
         injector.register(FileManager.default, in: .application)
+        injector.register(userDefaults, in: .application)
         injector.register(URLSession.shared, in: .application)
-        injector.register(Logger.shared, in: .application)
         injector.register(keyWindow, in: .application)
     }
     
@@ -24,6 +24,12 @@ private extension AppBuilder {
         let window = UIWindow()
         window.makeKeyAndVisible()
         return window
+    }
+    
+    var userDefaults: UserDefaultsProtocol {
+        let userDefaults = UserDefaults.standard
+        userDefaults.set(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")
+        return userDefaults
     }
     
 }

@@ -2,6 +2,7 @@ import UIKit
 import Combine
 
 protocol NavigationViewDataSourceProtocol: UICollectionViewDataSource {
-    var internalEvent: PassthroughSubject<NewsData, Never> { get }
-    var externalEvent: AnyPublisher<Void, Never> { get }
+    var externalEvent: AnyPublisher<NewsImageLink, Never> { get }
+    func configure(_ data: NewsData)
+    func update(_ data: NewsImage)
 }

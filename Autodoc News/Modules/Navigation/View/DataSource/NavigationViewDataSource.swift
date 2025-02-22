@@ -3,40 +3,40 @@ import Combine
 
 class NavigationViewDataSource: NSObject, NavigationViewDataSourceProtocol {
     
-    let internalEvent: PassthroughSubject<NewsData, Never>
-    let externalEvent: AnyPublisher<Void, Never>
+    let externalEvent: AnyPublisher<NewsImageLink, Never>
     
-    private let externalPublisher: PassthroughSubject<Void, Never>
-    private var news: [NewsItem]
-    private var subscriptions: Set<AnyCancellable>
+    private weak var builder: NavigationBuilderCellProtocol?
+    private let mutex: NSLock
+    private let externalPublisher: PassthroughSubject<NewsImageLink, Never>
+    private var news: [NewsInfo]
     
-    override init() {
-        self.internalEvent = PassthroughSubject<NewsData, Never>()
-        self.externalPublisher = PassthroughSubject<Void, Never>()
+    init(builder: NavigationBuilderCellProtocol) {
+        self.builder = builder
+        self.mutex = NSLock()
+        self.externalPublisher = PassthroughSubject<NewsImageLink, Never>()
         self.externalEvent = AnyPublisher(externalPublisher)
-        self.news = [NewsItem]()
-        self.subscriptions = Set<AnyCancellable>()
+        self.news = [NewsInfo]()
         super.init()
-        setupObservers()
     }
     
-    private func setupObservers() {
-        internalEvent.sink { [weak self] in
-            self?.news = $0.news
-        }.store(in: &subscriptions)
+    func configure(_ data: NewsData) {
+        mutex.lock()
+        news += data.news
+        mutex.unlock()
     }
     
-}
-
-// MARK: Protocol
-extension NavigationViewDataSource {
+    func update(_ data: NewsImage) {
+        mutex.lock()
+        news[data.indexPath.row].image = data.image
+        mutex.unlock()
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         news.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        defaultCell(collectionView, indexPath)
+        builder?.newsCell(collectionView, indexPath, news[indexPath.row]) ?? defaultCell(collectionView, indexPath)
     }
     
 }

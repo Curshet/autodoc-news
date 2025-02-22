@@ -1,3 +1,9 @@
 import Foundation
 
-extension NSObject: LoggerProtocol {}
+extension NSObject: LoggerProtocol {
+    
+    static var typeName: String {
+        description()
+    }
+    
+}

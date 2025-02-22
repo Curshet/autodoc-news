@@ -18,7 +18,7 @@ class SplashView: UIView, SplashViewProtocol {
         self.externalEvent = AnyPublisher(externalPublisher)
         self.subscriptions = Set<AnyCancellable>()
         super.init(frame: .zero)
-        configure()
+        setupConfiguration()
     }
     
     required init?(coder: NSCoder) {
@@ -30,7 +30,7 @@ class SplashView: UIView, SplashViewProtocol {
 // MARK: Private
 private extension SplashView {
     
-    func configure() {
+    func setupConfiguration() {
         imageView.contentMode = .scaleAspectFit
         addSubview(imageView)
         setupObservers()

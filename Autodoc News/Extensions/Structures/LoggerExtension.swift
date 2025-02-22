@@ -3,7 +3,7 @@ import OSLog
 
 extension Logger {
     
-    static let shared = Logger(subsystem: "com.autodoc.news", category: "system")
+    static let shared = Logger(subsystem: Bundle.main.identifier, category: "system")
     
     func print(_ message: String) {
         let date = Date().utf

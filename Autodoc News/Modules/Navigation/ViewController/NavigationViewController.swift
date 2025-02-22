@@ -24,8 +24,8 @@ class NavigationViewController: UIViewController {
             self?.customView.internalEvent.send($0)
         }.store(in: &subscriptions)
         
-        customView.externalEvent.sink {
-            return
+        customView.externalEvent.sink { [weak self] in
+            self?.viewModel.internalEvent.send(.action($0))
         }.store(in: &subscriptions)
     }
     

@@ -16,6 +16,7 @@ timeline.xctimeline
 xcuserdata/
 *.xcarchive
 *.xccheckout
+*.xcbkptlist
 *.xcscmblueprint
 !*.xcodeproj/xcshareddata/
 !*.xcworkspace/contents.xcworkspacedata

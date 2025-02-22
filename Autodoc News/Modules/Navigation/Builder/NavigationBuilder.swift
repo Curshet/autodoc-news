@@ -1,6 +1,6 @@
 import UIKit
 
-class NavigationBuilder: Builder, NavigationBuilderProtocol {
+class NavigationBuilder: Builder {
     
     override init(injector: InjectorProtocol) {
         super.init(injector: injector)
@@ -27,14 +27,14 @@ private extension NavigationBuilder {
     var layout: UICollectionViewFlowLayout {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-        layout.itemSize = UICollectionViewFlowLayout.automaticSize
+        layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
         return layout
     }
     
 }
 
-// MARK: Protocol
-extension NavigationBuilder {
+// MARK: NavigationBuilderProtocol
+extension NavigationBuilder: NavigationBuilderProtocol {
     
     var coordinator: NavigationCoordinatorProtocol? {
         guard let coordinator = injector.resolve(NavigationCoordinator.self, from: .navigation) else {
@@ -57,17 +57,41 @@ extension NavigationBuilder {
             return error(of: URLSession.self)
         }
         
+        guard let fileManager = injector.resolve(FileManager.self, from: .application) else {
+            return error(of: FileManager.self)
+        }
+        
         guard let coordinator = injector.resolve(NavigationCoordinator.self, from: .navigation) else {
             return error(of: NavigationCoordinator.self)
         }
         
         let networkManager = NavigationNetworkManager(session: session, decoder: decoder)
-        let viewModel = NavigationViewModel(coordinator: coordinator, networkManager: networkManager)
-        let dataSource = NavigationViewDataSource()
+        let storage = Storage(fileManager: fileManager)
+        let viewModel = NavigationViewModel(coordinator: coordinator, networkManager: networkManager, storage: storage)
+        let dataSource = NavigationViewDataSource(builder: self)
         let delegate = NavigationViewDelegate()
         let view = NavigationView(dataSource: dataSource, delegate: delegate, layout: layout)
+        view.dataSource = dataSource
+        view.delegate = delegate
         let viewController = NavigationViewController(viewModel: viewModel, customView: view)
         return viewController
+    }
+    
+}
+
+// MARK: NavigationBuilderCellProtocol
+extension NavigationBuilder: NavigationBuilderCellProtocol {
+    
+    func newsCell(_ collectionView: UICollectionView, _ indexPath: IndexPath, _ data: NewsInfo) -> NavigationNewsCellProtocol? {
+        let titleLabel = UILabel()
+        let textLabel = UILabel()
+        let imageView = UIImageView()
+        let indicatorView = UIActivityIndicatorView(style: .medium)
+        let view = NavigationNewsView(titleLabel: titleLabel, textLabel: textLabel, imageView: imageView, indicatorView: indicatorView)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NavigationNewsCell.typeName, for: indexPath) as? NavigationNewsCell
+        cell?.inject(view: view)
+        cell?.configure(data)
+        return cell
     }
     
 }
